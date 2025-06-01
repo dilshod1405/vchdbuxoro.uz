@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 const stations = [
-  { name: 'Buxoro', coords: [39.7745, 64.4286] },
+  { name: 'Buxoro', coords: [39.72221100535833, 64.54961399688833] },
   { name: 'Yangiobod', coords: [39.7000, 64.5000] },
   { name: 'Tuztepa', coords: [39.6500, 64.5500] },
   { name: 'Uchachiq', coords: [39.6000, 64.6000] },

@@ -14,11 +14,11 @@ const Header = () => {
   // Links array
   const links = [
     { href: '/', label: 'Bosh sahifa' },
-    { href: '/About', label: 'Biz haqimizda' },
-    { href: '/Services', label: 'Xizmatlar' },
-    { href: '/News', label: 'Yangiliklar' },
-    { href: '/Directors', label: 'Rahbariyat' },
-    { href: '/Contact', label: 'Aloqa' },
+    { href: '/about', label: 'Biz haqimizda' },
+    { href: '/services', label: 'Xizmatlar' },
+    { href: '/news', label: 'Yangiliklar' },
+    { href: '/directors', label: 'Rahbariyat' },
+    { href: '/contact', label: 'Aloqa' },
   ];
 
   // isMenuOpen holati o'zgarganda menyu balandligini o'rnatish uchun useEffect
