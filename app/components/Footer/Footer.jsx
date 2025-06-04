@@ -3,6 +3,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaTelegramPlane, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
+
+const PDFViewer = dynamic(() => import('../PDFViewer'), { ssr: false });
 
 const Footer = () => {
   return (
@@ -10,14 +13,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-10 md:gap-0">
 
         {/* Logo va manzil */}
-        <div className="flex flex-col items-start md:items-start space-y-4 max-w-sm">
-          {/* Logo */}
+        <div className="flex flex-col items-start space-y-4 max-w-sm">
           <div className="flex items-center space-x-3">
             <Image src="/images/logo.png" alt="Buxoro Vagon Deposi" width={48} height={48} />
             <span className="text-2xl font-extrabold text-[#DDA853]">Buxoro Vagon Deposi</span>
           </div>
 
-          {/* Manzil */}
           <address className="not-italic text-sm sm:text-base leading-relaxed">
             Manzil: O'zbekiston, Buxoro viloyati, Kogon shahar, Bog'i-chinor ko'chasi, 5-uy <br />
             Telefon: <a href="tel:+998901234567" className="hover:text-[#DDA853]">+998 91 644 24 42</a>
@@ -37,42 +38,20 @@ const Footer = () => {
           </ul>
         </nav>
 
-        {/* Ijtimoiy tarmoqlar */}
+        {/* Ijtimoiy tarmoqlar va PDF */}
         <div className="flex flex-col items-start space-y-4">
           <h3 className="text-lg font-semibold mb-2">Ijtimoiy tarmoqlarimiz</h3>
           <div className="flex space-x-6 text-[#DDA853] text-2xl">
-            <a
-              href="https://t.me/yourtelegram"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Telegram"
-              className="hover:text-white transition-colors"
-            >
-              <FaTelegramPlane />
-            </a>
-            <a
-              href="https://instagram.com/yourinstagram"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="hover:text-white transition-colors"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://facebook.com/yourfacebook"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="hover:text-white transition-colors"
-            >
-              <FaFacebookF />
-            </a>
+            <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="hover:text-white transition-colors"><FaTelegramPlane /></a>
+            <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white transition-colors"><FaInstagram /></a>
+            <a href="https://facebook.com/yourfacebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-white transition-colors"><FaFacebookF /></a>
           </div>
+
+          {/* PDF preview rasmi */}
+          <PDFViewer />
         </div>
       </div>
 
-      {/* Pastki qism: mualliflik huquqi */}
       <div className="mt-12 border-t border-[#DDA853]/30 pt-6 text-center text-sm text-[#DDA853]/70">
         &copy; {new Date().getFullYear()} Buxoro Vagon Deposi. Barcha huquqlar himoyalangan.
       </div>

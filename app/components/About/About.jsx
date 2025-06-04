@@ -27,7 +27,7 @@ const About = () => {
             <span className="text-[#DDA853]">deposi</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-xl text-left text-[#F0E7D8]">
-            Buxoro vagon deposi – yuklarni xavfsiz va o‘z vaqtida yetkazishni ta’minlaydi. Har bir vagon texnik ko‘rikdan o‘tkazilib, sifat kafolatlanadi. Depoda zamonaviy texnologiyalar va malakali mutaxassislar ishlaydi, vagonlarni kapital ta’mirlash va ehtiyot qismlar ishlab chiqarish amalga oshiriladi. Shuningdek, aholiga pullik xizmatlar ko‘rsatiladi va boshqa korxonalar yuk vagonlari qo‘llab-quvvatlanadi.
+            Buxoro vagon deposining asosiy ish vazifasi yuk vagonlarini ta'mirlash va ekspluatatsiya uchastkasida vagonlarga texnik xizmat ko'rsatishdan iborat
           </p>
         </motion.div>
 

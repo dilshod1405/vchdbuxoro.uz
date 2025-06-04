@@ -15,10 +15,7 @@ const Map = () => {
   return (
     <section className="py-20 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto mb-8 text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[#DDA853]">Buxoro – Miskin Yo‘nalishi</h2>
-        <p className="text-lg sm:text-xl">
-          Temir yo‘l bo‘ylab harakatlanish yo‘nalishi interaktiv xaritada ko‘rsatilgan.
-        </p>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-[#DDA853]">Buxoro vagon deposi joylashuvi xaritada</h2>
       </div>
 
       <div className="h-[500px] w-full rounded-2xl overflow-hidden shadow-lg">

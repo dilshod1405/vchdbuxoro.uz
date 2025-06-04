@@ -9,12 +9,12 @@ const Info = () => {
   const stats = [
     {
       label: "Xodimlar soni",
-      value: 120,
+      value: 850,
       icon: <Users size={56} className="text-[#DDA853]" />,
     },
     {
-      label: "Xizmat ko'rsatilgan vagonlar",
-      value: 850,
+      label: "Ta'mirlangan vagonlar (1 yilda)",
+      value: 1500,
       icon: <Train size={56} className="text-[#DDA853]" />,
     },
     {
