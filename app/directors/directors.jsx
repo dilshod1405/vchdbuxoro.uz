@@ -74,7 +74,7 @@ const DirectorsPage = () => {
             variants={item}
             className="group bg-gradient-to-br from-[#1e293b] to-[#0f172a] rounded-2xl shadow-2xl shadow-yellow-700/30 overflow-hidden cursor-pointer transform transition duration-500 hover:scale-[1.05] hover:shadow-yellow-500/80"
           >
-            <div className="relative w-full h-64 overflow-hidden rounded-t-2xl">
+            <div className="relative w-full overflow-hidden rounded-t-2xl">
               <img
                 src={photo}
                 alt={`${firstName} ${lastName}`}
