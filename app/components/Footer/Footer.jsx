@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           {/* PDF preview rasmi */}
-          <PDFViewer />
+          {/* <PDFViewer /> */}
         </div>
       </div>
 
