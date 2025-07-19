@@ -19,7 +19,7 @@ const Info = () => {
     },
     {
       label: "Tajriba (yil)",
-      value: 15,
+      value: 77,
       icon: <BadgeCheck size={56} className="text-[#DDA853]" />,
     },
   ];
